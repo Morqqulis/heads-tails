@@ -35,7 +35,6 @@ function playGame(userChoice) {
         elements.images.tail.classList.remove('hidden')
     }
 
-    // displayResult(result)
     updateStatistics(result)
     displayChoices(userChoice, botChoice)
 }
@@ -51,20 +50,6 @@ function getResult(randomNumber, userChoice, botChoice) {
         return 'lose'
     }
 }
-
-// function displayResult(result) {
-//     if (result === 'draw') {
-//         elements.result.textContent = 'Draw!'
-//         elements.images.head.classList.add('hidden')
-//         elements.images.tail.classList.add('hidden')
-//     } else {
-//         const playerWins = result === 'win'
-//         const botWins = result === 'botWin'
-//         elements.result.textContent = playerWins && botWins ? 'Draw!' : playerWins ? 'You win!' : 'Bot wins!'
-//         elements.images.head.classList.toggle('hidden', !playerWins)
-//         elements.images.tail.classList.toggle('hidden', playerWins)
-//     }
-// }
 
 function updateStatistics(result) {
     if (result === 'win') {
