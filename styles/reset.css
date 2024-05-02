@@ -1,0 +1,52 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+}
+button {
+	background-color: inherit;
+	border: none;
+	cursor: pointer;
+}
+ul,
+ol {
+	list-style: none;
+}
+
+button {
+	cursor: pointer;
+	background-color: inherit;
+}
+
+img {
+	vertical-align: top;
+	max-width: 100%;
+}
+
+[class*='__container'] {
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+html,
+body,
+.wrapper {
+	height: 100%;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	overflow: clip;
+
+	& > main {
+		flex: 1 1 auto;
+		min-width: 0;
+	}
+}

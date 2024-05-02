@@ -1,0 +1,40 @@
+{
+    "printWidth": 180,
+    "tabWidth": 4,
+    "semi": false,
+    "singleQuote": true,
+    "jsxSingleQuote": false,
+    "trailingComma": "es5",
+    "bracketSpacing": true,
+    "bracketSameLine": false,
+    "arrowParens": "avoid",
+    "proseWrap": "never",
+    "htmlWhitespaceSensitivity": "css",
+    "vueIndentScriptAndStyle": false,
+    "endOfLine": "lf",
+    "embeddedLanguageFormatting": "auto",
+    "singleAttributePerLine": false,
+    "trailingCommaPHP": true,
+    "overrides": [
+        {
+            "files": "*.html",
+            "options": {
+                "printWidth": 999
+            }
+        },
+        {
+            "files": ["*.json"],
+            "options": {
+                "tabWidth": 4,
+                "useTabs": false
+            }
+        },
+        {
+            "files": "*.php",
+            "options": {
+                "braceStyle": "1tbs"
+            }
+        }
+    ],
+    "plugins": ["prettier-plugin-tailwindcss"]
+}

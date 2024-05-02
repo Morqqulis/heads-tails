@@ -1,0 +1,19 @@
+{
+    "name": "clean",
+    "version": "1.0.0",
+    "description": "clean page",
+    "main": "./scripts/index.js",
+    "author": "Achilles",
+    "license": "MIT",
+    "private": true,
+    "scripts": {
+        "dev": "tailwindcss -i ./styles/index.css -o ./styles/output.css --watch"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.4.19",
+        "postcss": "^8.4.38",
+        "prettier": "^3.2.5",
+        "prettier-plugin-tailwindcss": "^0.5.14",
+        "tailwindcss": "^3.4.3"
+    }
+}
