@@ -46,7 +46,6 @@ body,
 .wrapper {
   display: flex;
   flex-direction: column;
-  overflow: clip;
   & > main {
     flex: 1 1 auto;
     min-width: 0;
@@ -920,6 +919,10 @@ video {
   height: 200px;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .w-1 {
   width: 0.25rem;
 }
@@ -940,12 +943,12 @@ video {
   width: 100%;
 }
 
-.max-w-3xl {
-  max-width: 48rem;
-}
-
 .max-w-80 {
   max-width: 20rem;
+}
+
+.max-w-\[1200px\] {
+  max-width: 1200px;
 }
 
 .max-w-\[200px\] {
@@ -1480,6 +1483,10 @@ video {
 
 .gap-4 {
   gap: 1rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
